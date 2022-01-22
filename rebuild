@@ -1,0 +1,7 @@
+set -e
+
+
+docker rmi tmtzminhtri/react-nginx:latest
+docker build --platform linux/amd64 -t tmtzminhtri/react-nginx:latest .
+
+docker push tmtzminhtri/react-nginx:latest
